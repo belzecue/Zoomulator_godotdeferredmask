@@ -88,7 +88,7 @@ __meta__ = {
 }
 
 [node name="Viewport" type="Viewport" parent="."]
-size = Vector2( 1388, 613 )
+size = Vector2( 1388, 648 )
 world = SubResource( 1 )
 transparent_bg = true
 handle_input_locally = false
@@ -114,7 +114,6 @@ mesh = SubResource( 2 )
 texture = ExtResource( 8 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-layer = -1
 
 [node name="MaskView" type="MeshInstance2D" parent="CanvasLayer"]
 visible = false
@@ -123,8 +122,10 @@ mesh = SubResource( 3 )
 texture = SubResource( 4 )
 
 [node name="Info" type="Label" parent="CanvasLayer"]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_left = 7.18484
+margin_top = 7.78358
+margin_right = 592.185
+margin_bottom = 38.7836
 text = "Use arrow keys to move.
 Walking behind walls will render them transparent so that the player character can be seen."
 __meta__ = {
