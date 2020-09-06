@@ -14,7 +14,7 @@
 [sub_resource type="World" id=1]
 
 [sub_resource type="QuadMesh" id=2]
-size = Vector2( 40, 40 )
+size = Vector2( 50, 50 )
 
 [sub_resource type="QuadMesh" id=3]
 size = Vector2( 2, 2 )
@@ -88,7 +88,7 @@ __meta__ = {
 }
 
 [node name="Viewport" type="Viewport" parent="."]
-size = Vector2( 1388, 648 )
+size = Vector2( 1388, 655 )
 world = SubResource( 1 )
 transparent_bg = true
 handle_input_locally = false
@@ -109,7 +109,7 @@ texture = ExtResource( 8 )
 
 [node name="Mask2" type="MeshInstance2D" parent="Viewport/ReverseYSort"]
 material = ExtResource( 1 )
-position = Vector2( 549.741, 238.523 )
+position = Vector2( 549.741, 238.522 )
 mesh = SubResource( 2 )
 texture = ExtResource( 8 )
 
@@ -122,6 +122,7 @@ mesh = SubResource( 3 )
 texture = SubResource( 4 )
 
 [node name="Info" type="Label" parent="CanvasLayer"]
+visible = false
 margin_left = 7.18484
 margin_top = 7.78358
 margin_right = 592.185
@@ -163,6 +164,7 @@ region_enabled = true
 region_rect = Rect2( 49.3654, 1.67956, 49.5722, 49.0542 )
 
 [node name="Camera2D" type="Camera2D" parent="Walls/KinematicBody2D"]
+position = Vector2( 0, -10.1924 )
 current = true
 zoom = Vector2( 0.5, 0.5 )
 

@@ -17,3 +17,8 @@ _global_script_class_icons={
 
 config/name="YsortDeferredMask"
 run/main_scene="res://DeferredMasking.tscn"
+
+[display]
+
+window/size/width=300
+window/size/height=200
